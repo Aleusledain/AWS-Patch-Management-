@@ -21,5 +21,10 @@ module "patch_group" {
 }
 
 module "maintenance_window" {
-  source           = "../../modules/maintenance_window"
+  source   = "../../modules/maintenance_window"
+  name     = "DevPatchWindow"
+  schedule = "cron(0 3 ? * SUN *)"
+  duration = 2
+  cutoff   = 1
 }
+
