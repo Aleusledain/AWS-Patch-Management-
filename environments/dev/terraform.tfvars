@@ -16,3 +16,9 @@ window_name     = "DevPatchWindow"
 schedule = "cron(0 3 ? * SUN *)"
 duration = 2
 cutoff   = 1
+
+vpc_security_group_ids = ["sg-xxxxxxxx"]
+subnet_id              = "subnet-xxxxxxxx"
+ami                    = "ami-0c02fb55956c7d316"
+instance_type          = "t2.micro"
+instance_name          = "PatchableLinux"
