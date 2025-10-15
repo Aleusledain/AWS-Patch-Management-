@@ -12,7 +12,7 @@ patch_baseline_id = "PLACEHOLDER"      # You can override this in main.tf if nee
 patch_group_name  = "DevGroup"
 
 # Maintenance Window
-name     = "DevPatchWindow"
+window_name     = "DevPatchWindow"
 schedule = "cron(0 3 ? * SUN *)"
 duration = 2
 cutoff   = 1
